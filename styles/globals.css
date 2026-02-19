@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+          scroll-behavior: smooth;
+    }
+
+  body {
+        font-family: 'Inter', sans-serif;
+        background-color: #ffffff;
+        color: #1a1a1a;
+  }
+
+  h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+    .btn-primary {
+          @apply bg-gold text-primary font-semibold px-6 py-3 rounded hover:bg-gold-light transition-colors duration-200;
+    }
+
+  .btn-outline {
+        @apply border-2 border-gold text-gold font-semibold px-6 py-3 rounded hover:bg-gold hover:text-primary transition-colors duration-200;
+  }
+
+  .section-title {
+        @apply text-3xl font-serif text-primary mb-4;
+  }
+
+  .gold-divider {
+        @apply w-16 h-1 bg-gold mb-6;
+  }
+}
